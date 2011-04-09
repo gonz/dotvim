@@ -36,6 +36,14 @@
 "  sl - tablast
 "  st - tabs
 "
+" FOLDS
+"
+" <SPACE> Toggle fold
+" ,zi - Fold method indent
+" ,zs - Fold method syntax
+" ,zm - Fold method manual
+" ,zk - Fold method marker
+"
 " PLUGIN.NERDTREE
 "
 "  ,t - Nerdtree toggle
@@ -50,12 +58,36 @@ map <DOWN> gj
 map <UP> gk
 nmap Y y$
 noremap ' `
-" Space opens a fold recusively
-nmap <Space> zA
 " Toggle line numbers
 map <Leader>n :set invnumber<CR>
 " Toggle highlight
 nmap <silent> <Leader>, :set invhlsearch<CR>
+
+
+"" Folds
+fun! ToggleFold()
+    if foldlevel('.') == 0
+        normal! l
+    else
+        if foldclosed('.') < 0
+            . foldclose
+        else
+            . foldopen
+        endif
+    endif
+    " Clear status line
+    echo
+endfun
+
+noremap <space> :call ToggleFold()<CR>
+"Fold method: Indent
+map <silent> <leader>zi :silent set foldmethod=indent<CR>
+"Fold method: manual
+map <silent> <leader>zm :silent set foldmethod=manual<CR>
+"Fold method: syntax
+map <silent> <leader>zs :silent set foldmethod=manual<CR>
+"Fold method: marker
+map <silent> <leader>zk :silent set foldmethod=marker<CR>
 
 
 "" Take current file basedir

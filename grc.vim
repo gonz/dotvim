@@ -1,8 +1,9 @@
 set guioptions=Agitr
+set showtabline=2
+set cursorline
 
 " HL cursor line
 colorscheme desert
-set cursorline
 highlight CursorLine guibg=#2a2a2a
 
 " Fullscreen map

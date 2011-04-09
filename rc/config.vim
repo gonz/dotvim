@@ -31,5 +31,5 @@ set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.i
 set background=dark
 " Folding
 set foldtext=""         " Don't show fold's first line
-set foldmethod=indent
+set foldmethod=manual
 set nofoldenable

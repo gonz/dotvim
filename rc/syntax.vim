@@ -7,6 +7,3 @@ if has("autocmd")
 endif
 
 highlight Folded ctermfg=darkmagenta
-
-autocmd BufNewFile,BufRead *.fish setl filetype=fish
-autocmd BufRead,BufNewFile *.html set filetype=htmldjango
