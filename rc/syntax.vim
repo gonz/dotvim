@@ -1,9 +1,7 @@
 " SYNTAX
 " ======
-syntax on
-syntax sync fromstart
+syntax enable
 if has("autocmd")
- filetype plugin on
+    filetype plugin on
 endif
-
-highlight Folded ctermfg=darkmagenta
+colorscheme solarized

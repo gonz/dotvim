@@ -143,3 +143,6 @@ nmap sj :tabnext<CR>
 nmap sk :tabprevious<CR>
 nmap sl :tablast<CR>
 nmap st :tabs<CR>
+
+"" Fullscreen
+nmap <D-CR> :set invfu<CR>

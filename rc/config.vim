@@ -29,7 +29,13 @@ set winminheight=0
 set winminwidth=0
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 set background=dark
-" Folding
 set foldtext=""         " Don't show fold's first line
 set foldmethod=manual
 set nofoldenable
+set guioptions=Agitr
+set clipboard=unnamed
+set cursorline
+if has('gui_running')
+    set showtabline=2
+    set guifont=Menlo\ Regular:h14
+endif
