@@ -1,6 +1,7 @@
 " CONFIG
 " ======
 set modelines=0
+set hidden
 set nocompatible	    " Use Vim defaults instead of 100% vi compatibility
 set number              " Show line numbers
 set viminfo='20,\"50	" Read/write a .viminfo file, don't store more than 50 lines of registers
@@ -9,7 +10,9 @@ set ruler		        " Show the cursor position all the time
 set showmode            " Show which mode are we in
 set showcmd		        " Show (partial) command in status line.
 set hlsearch            " Highlight search matches
-set noignorecase	    " Do case sensitive matching
+set ignorecase	        " Don't case sensitive matching if all letters are lowercase (see smartcase)
+set smartcase           " Case sensitive if uppercase letter present
+set undolevels=1000
 set incsearch		    " Incremental search
 set noautowrite		    " Automatically save before commands like :next and :make
 set smarttab            " <BS> deletes a tab not only a space
@@ -35,6 +38,10 @@ set nofoldenable
 set guioptions=Agitr
 set clipboard=unnamed
 set cursorline
+set title               " Change terminal title
+set visualbell
+set noerrorbells
+
 if has('gui_running')
     set showtabline=2
     set guifont=Menlo\ Regular:h14
