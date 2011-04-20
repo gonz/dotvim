@@ -1,7 +1,7 @@
 " CONFIG
 " ======
 set modelines=0
-set hidden
+set nohidden
 set nocompatible	    " Use Vim defaults instead of 100% vi compatibility
 set number              " Show line numbers
 set viminfo='20,\"50	" Read/write a .viminfo file, don't store more than 50 lines of registers

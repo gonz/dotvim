@@ -1,5 +1,6 @@
 " MAPPINGS
 " ========
+" TODO: Move this this into a helpfile "custom maps"
 "
 "  ,' - set invhlsearch
 "  ,n - set invnumber
@@ -7,6 +8,7 @@
 "  ,e - :e in current file dir
 "  ,s - :sp in current file dir
 "  ,v - :vsp in current file dir
+"  ,t - :tabnew in current file dir
 "
 " SPELL
 "
@@ -22,7 +24,7 @@
 "  C-h - <C-W>l
 "
 "  + - <C-W>+
-"  - - <C-W>-
+"  - - $
 "  ` - <C-W>_
 "
 " TABS
@@ -38,24 +40,40 @@
 "
 " FOLDS
 "
-" <SPACE> Toggle fold
-" ,zi - Fold method indent
-" ,zs - Fold method syntax
-" ,zm - Fold method manual
-" ,zk - Fold method marker
+"  <SPACE> - Toggle fold
+"  ,zi - Fold method indent
+"  ,zs - Fold method syntax
+"  ,zm - Fold method manual
+"  ,zk - Fold method marker
 "
-" PLUGIN.NERDTREE
+" PLUGIN.NERDTree
 "
-"  ,t - Nerdtree toggle
-"  ,f - Nerdtree toggle current dir
+"  ´f - Nerdtree toggle
+"  ´n - Nerdtree toggle current dir
 "  ,b - Nerdtree bookmark
+"
+" PLUGIN.NERDCommenter (leader: ",c")
+"
+"  ,c<space> - Toggle
+"  ,cu - Uncomment
+"  ,cc - Comment
+"  ,cl - AlignLeft
+"  ,cm - Minimal
+"  ,cs - Sexy
+"  ,ci - Invert
+"  ,cy - Yank
+"  ,cb - AlignBoth
+"  ,cn - Nest
+"  ,c$ - ToEOL
+"  ,cA - Append
+"  ,ca  - AltDelims
 "
 
 let mapleader = ","
 
 "" Remaps
-map <DOWN> gj
-map <UP> gk
+map j gj
+map k gk
 nmap Y y$
 noremap ' `
 " Toggle line numbers
@@ -95,8 +113,8 @@ map <silent> <leader>zk :silent set foldmethod=marker<CR>
 map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " :sp
 map <leader>s :sp <C-R>=expand("%:p:h") . "/" <CR>
-" :vsp
-map <leader>v :vsp <C-R>=expand("%:p:h") . "/" <CR>
+" :tabnew
+map <leader>t :tabnew <C-R>=expand("%:p:h") . "/" <CR>
 
 
 "indent
@@ -119,7 +137,7 @@ noremap <C-k> <C-W>k
 noremap <C-l> <C-W>l
 
 map + <C-W>+
-map - <C-W>-
+map - $
 map ` <C-W>_
 
 "" Tabs

@@ -5,9 +5,9 @@
 "" Plugin: NERDTree
 
 " set project folder to x
-map <leader>t :NERDTreeToggle<CR>
-nnoremap <silent> <leader>f :NERDTreeFind<CR>
-map <leader>b :NERDTreeFromBookmark<Space>
+map ´f :NERDTreeToggle<CR>
+nnoremap ´n :NERDTreeFind<CR>
+map ´b :NERDTreeFromBookmark<Space>
 " files/dirs to ignore in NERDTree
 let NERDTreeIgnore=[
     \'\~$',
