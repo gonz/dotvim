@@ -41,6 +41,7 @@ set cursorline
 set title               " Change terminal title
 set visualbell
 set noerrorbells
+set shell=/bin/sh
 
 if has('gui_running')
     set showtabline=2
