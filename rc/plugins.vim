@@ -6,7 +6,7 @@
 
 " set project folder to x
 map ´f :NERDTreeToggle<CR>
-nnoremap ´n :NERDTreeFind<CR>
+nnoremap ´c :NERDTreeFind<CR>
 map ´b :NERDTreeFromBookmark<Space>
 " files/dirs to ignore in NERDTree
 let NERDTreeIgnore=[

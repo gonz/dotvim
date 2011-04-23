@@ -50,7 +50,7 @@
 "
 "  ´f - Nerdtree toggle
 "  ´n - Nerdtree toggle current dir
-"  ,b - Nerdtree bookmark
+"  ,c - Nerdtree bookmark
 "
 " PLUGIN.NERDCommenter (leader: ",c")
 "
