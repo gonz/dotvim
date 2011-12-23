@@ -25,7 +25,7 @@ set showmatch           " Show matching brackets.
 set backspace=indent,eol,start " More powerful backspacing
 set backupdir=~/tmp,/tmp       " Group backup files on this directories
 set directory=.,~/tmp,/tmp     " Group swap files on this directories
-set complete=.,k,w,d
+set complete=.,w,t,k
 set dictionary=~/.vim/wordlists/default.list "Wordlists for completion
 set encoding=utf-8
 set winminheight=0
@@ -42,6 +42,11 @@ set title               " Change terminal title
 set visualbell
 set noerrorbells
 set shell=/bin/sh
+set wrap
+set linebreak
+set showbreak=>
+set list
+"set listchars=tab:» ,trail:¶
 
 if has('gui_running')
     set showtabline=2
