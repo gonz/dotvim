@@ -1,6 +1,12 @@
 " PLUGINS
 " =======
-" Mappings defined here should be documented in map.vim
+"
+
+
+"" Plugin: Pathogen
+
+call pathogen#infect()
+
 
 "" Plugin: NERDTree
 
@@ -27,3 +33,4 @@ let NERDTreeIgnore=[
     \'\.AppleDouble$',
     \'\.DS_Store$']
 let NERDTreeChDirMode=2
+
